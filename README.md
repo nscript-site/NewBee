@@ -36,3 +36,36 @@ NewBee 有两层意思：一是 NewBee，新手。二是发音牛逼，高手的
 - [NewBeeDB](https://github.com/nscript-site/NewBeeDB)：dotnet 下嵌入式向量数据库实现，可自定义扩展。
 
 - [NewBeeFin](https://github.com/nscript-site/NewBeeFin)：AI辅助金融投资研究工具，基于 blazor server 开发。
+
+## 体系结构
+
+### （1）BS 架构 
+
+这是针对 AI BS 应用的架构，单机或局域网使用，基于 Blazor Server 开发，默认 JIT 运行，不考虑 AOT。默认在 Windows 上开发和运行，理论上，也支持 Linux 和 Mac。
+
+![NewBeeBS](bs.png)
+
+- 这套架构用于 2B，已经交付了不少客户了，主要平台 Linux（ x64、Arm64）
+
+- NewBeeFin 是我自己用，辅助分析上司公司的基本面。
+
+### （2）APP 架构
+
+这个是我做跨平台 APP 的架构。重点测试 Windows、iOS、鸿蒙 三个平台，理论上，兼容 Linux、Mac、Android 平台。默认通过 AOT 来运行，JIT 一般只在开发时用用。之所以搞出 NewBeeDB，也是为了能在这六个平台上做 AI 类应用。
+
+![NewBee Apps](apps.png)
+
+## about me
+
+大龄程序员，数字游民。目前在尝试 AI 辅助下的超级个体路线。兴趣领域：
+
+（1）金融：
+
+- 大模型辅助进行上市公司的基本面分析，辅助技术指标，进行中长线交易，已经形成完整的交易系统
+- 从上市公司财报里挖掘好玩的事情
+
+（2）AI APP：
+
+- 看图类 APP
+- 扫描类 APP
+- 3D及具身智能类 APP
